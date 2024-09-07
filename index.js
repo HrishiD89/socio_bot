@@ -5,6 +5,8 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import UserModel from "./src/models/User.js";
 import EventModel from "./src/models/Event.js";
 import connectDb from "./src/config/db.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_API_KEY);
 

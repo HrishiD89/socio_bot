@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --env-file=.env index.js",
-    "build": "webpack --mode production"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
