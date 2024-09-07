@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --env-file=.env server.js"
+    "dev": "nodemon --env-file=.env index.js",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,10 @@
     "mongoose": "^8.6.1",
     "nodemon": "^3.1.4",
     "openai": "^4.58.1",
-    "telegraf": "^4.16.3"
+    "telegraf": "^4.16.3",
+    "webpack": "^5.94.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
