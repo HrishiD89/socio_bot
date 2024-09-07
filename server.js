@@ -65,6 +65,10 @@ bot.start(async (ctx) => {
   const {message_id,welcomeSticker} =  await ctx.replyWithSticker('CAACAgIAAxkBAAOxZtyYUI4ODkHu94eI9lb4FgABIaiPAAJeEgAC7JkpSXzv2aVH92Q7NgQ');
 });
 
+bot.help((ctx)=>{
+  ctx.reply('For support contact @socio_bots');
+})
+
 bot.command("generate", async (ctx) => {
   const from = ctx.update.message.from;
 
